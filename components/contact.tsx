@@ -60,9 +60,9 @@ export default function Contact() {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Let's Work
+            Let's Build Something
             <br />
-            <span className="text-white/70">Together</span>
+            <span className="text-white/70">Worth Launching</span>
           </h2>
         </motion.div>
 
