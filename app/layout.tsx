@@ -8,6 +8,7 @@ import type { Metadata } from 'next'; // Import Metadata type
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = { // Add Metadata type
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: "Mono - MINIMAL BRUTALIST DESIGN",
   description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
   generator: "Mohamed Djoudir",
