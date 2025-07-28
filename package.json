@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "tw-patch install",
-    "lint": "next lint",
-    "postinstall": "yarn dlx @yarnpkg/sdks vscode"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
