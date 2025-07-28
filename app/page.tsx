@@ -39,8 +39,6 @@ const Process = dynamic(() => import("@/components/process"));
 
 const Testimonials = dynamic(() => import("@/components/testimonials"));
 
-const Pricing = dynamic(() => import("@/components/pricing"));
-
 const Contact = dynamic(() => import("@/components/contact"));
 
 const Footer = dynamic(() => import("@/components/footer"));
@@ -69,7 +67,7 @@ function LazyLoad({ children }: { children: React.ReactNode }) {
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-[7500px]">
+    <main className="bg-black text-white">
       <ScrollRestoration />
       <NoiseBackground />
       <Navbar />
@@ -85,9 +83,6 @@ export default function Home() {
       </LazyLoad>
       <LazyLoad>
         <Testimonials />
-      </LazyLoad>
-      <LazyLoad>
-        <Pricing />
       </LazyLoad>
       <LazyLoad>
         <Contact />
