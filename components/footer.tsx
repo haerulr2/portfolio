@@ -5,27 +5,24 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-2xl font-bold tracking-tighter">
-              MONO<span className="text-neutral-400">.</span>
+              Haerulr2<span className="text-neutral-400">.</span>
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-8 md:items-center">
             <nav className="flex gap-6">
               <a href="#features" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Features
+                Home
               </a>
               <a href="#work" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Work
+                Projects
               </a>
               <a href="#process" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Process
-              </a>
-              <a href="#pricing" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Pricing
+                About
               </a>
             </nav>
             <div className="h-6 w-px bg-neutral-800 hidden md:block"></div>
             <div className="flex gap-4">
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/haerulr2/" className="text-neutral-400 hover:text-white transition-colors" aria-label="Instagram">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -34,12 +31,12 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors" aria-label="Twitter">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              <a href="https://www.tiktok.com/@kopidanbug" className="text-neutral-400 hover:text-white transition-colors pb-0" aria-label="TikTok">
+                <svg className="w-4 h-4 translate-y-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
                 </svg>
               </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors" aria-label="GitHub">
+              <a href="https://github.com/haerulr2" className="text-neutral-400 hover:text-white transition-colors" aria-label="GitHub">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -52,15 +49,15 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-6 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} MONO. All rights reserved.</p>
-          <div className="flex gap-6">
+          <p className="text-neutral-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} Haerulr2. Built with Next.js.</p>
+          {/* <div className="flex gap-6">
             <a href="#" className="text-neutral-400 hover:text-white transition-colors text-sm">
               Privacy Policy
             </a>
             <a href="#" className="text-neutral-400 hover:text-white transition-colors text-sm">
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

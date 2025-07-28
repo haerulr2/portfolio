@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
-            MONO<span className="text-neutral-400">.</span>
+            Haerulr2<span className="text-neutral-400">.</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -35,25 +35,25 @@ export default function Navbar() {
               href="#features"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Features
+              Home
             </Link>
             <Link
               href="#work"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Work
+              Projects
             </Link>
             <Link
               href="#process"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Process
+              About
             </Link>
             <Link
               href="#pricing"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Pricing
+              Blog
             </Link>
           </nav>
 
