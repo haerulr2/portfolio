@@ -10,21 +10,21 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "The minimalist approach perfectly captured our brand essence. Their attention to detail and focus on typography made our digital presence stand out.",
-      author: "Sarah Johnson",
-      role: "Creative Director, Studio Black",
+        "Clean code is just the surface. What really matters is whether your product solves a real problem efficiently, scalably, and reliably.",
+      author: "Haerul Fajar",
+      role: "Frontend Developer",
     },
     {
       quote:
-        "Working with this team was refreshing. They stripped away all the unnecessary elements and delivered a product that was both beautiful and functional.",
-      author: "Michael Chen",
-      role: "Founder, Monochrome",
+        "Every line of code is a decision. I don't write fancy syntax to impress. I write to deliver impact.",
+      author: "Haerul Fajar",
+      role: "Frontend Developer",
     },
     {
       quote:
-        "Their brutalist design philosophy challenged our conventional thinking and resulted in a website that truly captures attention and drives engagement.",
-      author: "Emily Rodriguez",
-      role: "Marketing Lead, Contrast Inc.",
+        "A beautiful UI is useless if the architecture behind it collapses under real world stress. I build from the inside out.",
+      author: "Haerul Fajar",
+      role: "Frontend Developer",
     },
   ]
 
@@ -48,12 +48,12 @@ export default function Testimonials() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">Testimonials</div>
+            <div className="text-xs uppercase tracking-widest text-white/80">WHY I BUILD</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            What Our Clients
+            Code Is Temporary
             <br />
-            <span className="text-white/70">Say About Us</span>
+            <span className="text-white/70">Impact Is Forever </span>
           </h2>
         </motion.div>
 
