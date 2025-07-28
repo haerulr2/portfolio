@@ -91,7 +91,7 @@ export default function Features() {
     >
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
-          variants={titleVariants}
+          variants={titleVariants as any}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="mb-16"
