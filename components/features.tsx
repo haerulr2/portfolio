@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Square, Circle, Triangle, Hexagon } from "lucide-react";
+import { Square, Circle, Triangle, Hexagon, Code2, CircuitBoard, LayoutPanelTop, Gauge } from "lucide-react";
 
 export default function Features() {
   const sectionRef = useRef(null);
@@ -13,28 +13,28 @@ export default function Features() {
 
   const features = [
     {
-      icon: <Square className="w-6 h-6" />,
-      title: "Minimalist Design",
+      icon: <Code2 className="w-6 h-6" />,
+      title: "Clean Code First",
       description:
-        "Clean, uncluttered interfaces that focus on content and functionality without unnecessary elements.",
+        "Maintainable and modular code using modern tech stack like Next.js, TypeScript, and TailwindCSS.",
     },
     {
-      icon: <Circle className="w-6 h-6" />,
-      title: "Brutalist Approach",
+      icon: <CircuitBoard className="w-6 h-6" />,
+      title: "Real-World Architecture",
       description:
-        "Raw, honest design that embraces the digital medium without trying to mimic physical materials.",
+        "I build with production in mind — from folder structure to deployment-ready setup.",
     },
     {
-      icon: <Triangle className="w-6 h-6" />,
-      title: "Responsive Layout",
+      icon: <LayoutPanelTop className="w-6 h-6" />,
+      title: "Pixel-Perfect Execution",
       description:
-        "Perfectly adapted experiences across all devices, from desktop to mobile, without compromise.",
+        "Frontend isn’t just working — it’s polished. I pay attention to layout, spacing, typography.",
     },
     {
-      icon: <Hexagon className="w-6 h-6" />,
-      title: "Performance Focus",
+      icon: <Gauge className="w-6 h-6" />,
+      title: "Blazing Performance",
       description:
-        "Lightning-fast loading times and smooth interactions for optimal user experience.",
+        "From lazy-loading to lighthouse-optimized. You'll never worry about speed again.",
     },
   ];
 
@@ -99,11 +99,11 @@ export default function Features() {
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white/40"></div>
             <div className="text-xs uppercase tracking-widest text-white/80">
-              Our Approach
+              How I Build
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Minimalist Design
+            Crafted Code
             <br />
             <span className="text-white/70">Maximum Impact</span>
           </h2>
