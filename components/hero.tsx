@@ -48,26 +48,26 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="inline-block border border-neutral-800 px-3 py-1 text-xs uppercase tracking-widest text-neutral-400">
-                Digital Design Studio
+                BUILD FAST. BREAK RULES.
               </div>
             </motion.div>
             <h1>
               <TextGenerateEffect
-                words="MINIMAL"
+                words="NOT JUST"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.2}
               />
               <TextGenerateEffect
-                words="BRUTALIST"
+                words="ANOTHER"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-neutral-400"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.4}
               />
               <TextGenerateEffect
-                words="DESIGN"
+                words="PORTFOLIO"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
@@ -81,8 +81,8 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-neutral-400 mb-8 max-w-md text-lg"
             >
-              We create minimalist digital experiences that make an impact. Raw,
-              unfiltered, and straight to the point.
+              This is where I document, ship, and experiment with clean design
+              and solid code.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -91,11 +91,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors flex items-center justify-center">
-                View Our Work
+                Explore Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
               <button className="border border-neutral-800 px-8 py-3 text-sm uppercase tracking-widest text-neutral-400 hover:border-neutral-600 hover:text-white transition-colors">
-                About Us
+                Who I Am
               </button>
             </motion.div>
           </div>
@@ -219,23 +219,6 @@ export default function Hero() {
             </motion.div>
           </div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="absolute bottom-10 left-0 right-0 flex justify-center"
-        >
-          <div className="flex items-center gap-8 border border-neutral-800 px-8 py-4">
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
-              Scroll
-            </div>
-            <div className="h-px w-10 bg-neutral-800"></div>
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
-              Discover
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
