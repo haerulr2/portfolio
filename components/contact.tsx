@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 import {
   Mail,
   Phone,
@@ -11,6 +12,37 @@ import {
 } from "lucide-react";
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // ANCHOR: Handle form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const response = await fetch('https://getform.io/f/bpjpwzqb', {
+        method: 'POST',
+        body: formData,
+      });
+
+      console.log(response);
+      if (response.ok) {
+        setSubmitStatus('success');
+        e.currentTarget.reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
@@ -35,7 +67,17 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {submitStatus === 'success' && (
+              <div className="bg-green-500/20 border border-green-500/30 p-4 text-green-400 text-sm">
+                Thank you! Your message has been sent successfully.
+              </div>
+            )}
+            {submitStatus === 'error' && (
+              <div className="bg-red-500/20 border border-red-500/30 p-4 text-red-400 text-sm">
+                Something went wrong. Please try again later.
+              </div>
+            )}
             <div>
               <label
                 htmlFor="name"
@@ -46,6 +88,8 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
+                name="name"
+                required
                 className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
                 placeholder="Your name"
               />
@@ -60,6 +104,8 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
+                required
                 className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
                 placeholder="your.email@example.com"
               />
@@ -73,13 +119,21 @@ export default function Contact() {
               </label>
               <textarea
                 id="message"
+                name="message"
+                required
                 rows={5}
                 className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
-            <button className="w-full bg-white text-black py-3 text-sm uppercase tracking-widest hover:bg-white/90 transition-colors relative group overflow-hidden">
-              <span className="relative z-10">Send Message</span>
+            <button 
+              type="submit" 
+              disabled={isSubmitting}
+              className="w-full bg-white text-black py-3 text-sm uppercase tracking-widest hover:bg-white/90 transition-colors relative group overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <span className="relative z-10">
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </span>
               <span className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             </button>
           </form>
@@ -114,12 +168,12 @@ export default function Contact() {
                     Phone
                   </div>
                   <a
-                    href="https://t.me/+6281234567890"
+                    href="https://t.me/+6285722556224"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    +62 812-3456-7890
+                    +62 857-2255-6224
                   </a>
                 </div>
               </div>
