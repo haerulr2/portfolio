@@ -8,9 +8,9 @@ import type { Metadata } from 'next'; // Import Metadata type
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = { // Add Metadata type
-  // metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
-  title: "Mono - MINIMAL BRUTALIST DESIGN",
-  // description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
+  metadataBase: new URL('https://haerulr2.com'),
+  title: "Haerul Fajar - Frontend Developer | Building Fast, Clean, Functional Interfaces",
+  description: "I'm a frontend developer focused on building fast, clean, and functional interfaces. Currently working at a software house in Subang, delivering web solutions for real-world businesses.",
   // generator: "Mohamed Djoudir",
   // Add manifest and icons metadata
   manifest: "/site.webmanifest",
@@ -23,16 +23,16 @@ export const metadata: Metadata = { // Add Metadata type
   },
   // Add Open Graph metadata
   openGraph: {
-    title: "Mono - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
-    url: "https://your-website-url.com", // Replace with your actual website URL
-    siteName: "Mono",
+    title: "Haerul Fajar - Frontend Developer | Building Fast, Clean, Functional Interfaces",
+    description: "I'm a frontend developer focused on building fast, clean, and functional interfaces. Currently working at a software house in Jakarta, delivering web solutions for real-world businesses.",
+    url: "https://haerulr2.com", // Replace with your actual website URL
+    siteName: "Haerul Fajar",
     images: [
       {
         url: "/image.png", // Path to your image in the public folder
         width: 1200, // Optional: Specify image width
         height: 630, // Optional: Specify image height
-        alt: "Mono Website Preview", // Optional: Alt text for the image
+        alt: "Haerulr2 Website Preview", // Optional: Alt text for the image
       },
     ],
     locale: "en_US", // Optional: Specify locale
@@ -41,8 +41,8 @@ export const metadata: Metadata = { // Add Metadata type
   // Optional: Add Twitter card metadata if needed
   twitter: {
     card: "summary_large_image",
-    title: "Mono - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
+    title: "Haerul Fajar - Frontend Developer | Building Fast, Clean, Functional Interfaces",
+    description: "I'm a frontend developer focused on building fast, clean, and functional interfaces. Currently working at a software house in Subang, delivering web solutions for real-world businesses.",
     // creator: "@yourTwitterHandle", // Optional: Your Twitter handle
     images: ["/image.png"], // Path to your image in the public folder
   },
