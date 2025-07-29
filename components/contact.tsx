@@ -21,7 +21,9 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    const formData = new FormData(e.currentTarget);
+    // Store form reference before async operation
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     try {
       const response = await fetch('https://getform.io/f/bpjpwzqb', {
@@ -29,10 +31,15 @@ export default function Contact() {
         body: formData,
       });
 
-      console.log(response);
-      if (response.ok) {
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+      console.log('Response statusText:', response.statusText);
+      
+      if (response.status >= 200 && response.status < 300) {
         setSubmitStatus('success');
-        e.currentTarget.reset();
+        if (form) {
+          form.reset();
+        }
       } else {
         setSubmitStatus('error');
       }
