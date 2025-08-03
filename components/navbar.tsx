@@ -32,7 +32,7 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              href="#features"
+              href="#home"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
               Home
