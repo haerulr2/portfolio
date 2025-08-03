@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import NoiseBackground from "@/components/noise-background";
+import About from "@/components/about";
 
 // Scroll restoration component
 const ScrollRestoration = () => {
@@ -80,6 +81,9 @@ export default function Home() {
       </LazyLoad>
       <LazyLoad>
         <Process />
+      </LazyLoad>
+      <LazyLoad>
+        <About />
       </LazyLoad>
       <LazyLoad>
         <Testimonials />
