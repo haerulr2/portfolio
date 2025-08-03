@@ -44,13 +44,13 @@ export default function Navbar() {
               Projects
             </Link>
             <Link
-              href="#process"
+              href="#about"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
               About
             </Link>
             <Link
-              href="#pricing"
+              href="#blog"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
               Blog
@@ -58,7 +58,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:block">
-            <button className="border border-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+            <button onClick={() => window.location.href = "#contact"} className="border border-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
               Contact
             </button>
           </div>
