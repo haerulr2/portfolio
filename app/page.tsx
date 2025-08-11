@@ -7,11 +7,44 @@ import Hero from "@/components/hero";
 import NoiseBackground from "@/components/noise-background";
 import About from "@/components/about";
 
-// Scroll restoration component
+// ANCHOR: Custom hook untuk hash navigation
+const useHashNavigation = () => {
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          // Delay scroll untuk memastikan semua komponen sudah ter-render
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 100);
+        }
+      }
+    };
+
+    // Handle hash saat halaman pertama kali dimuat
+    if (window.location.hash) {
+      // Delay lebih lama untuk lazy loading
+      setTimeout(handleHashChange, 500);
+    }
+
+    // Handle hash change events
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+};
+
+// ANCHOR: Scroll restoration component yang dimodifikasi
 const ScrollRestoration = () => {
   useEffect(() => {
-    // Set scroll to top
-    window.scrollTo(0, 0);
+    // Hanya set scroll ke top jika tidak ada hash
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
 
     // Disable browser's automatic scroll restoration
     if ("scrollRestoration" in history) {
@@ -19,7 +52,10 @@ const ScrollRestoration = () => {
     }
 
     const handleBeforeUnload = () => {
-      window.scrollTo(0, 0);
+      // Hanya reset scroll jika tidak ada hash
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+      }
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
@@ -67,6 +103,9 @@ function LazyLoad({ children }: { children: React.ReactNode }) {
 }
 
 export default function Home() {
+  // ANCHOR: Gunakan custom hook untuk hash navigation
+  useHashNavigation();
+
   return (
     <main className="bg-black text-white">
       <ScrollRestoration />
