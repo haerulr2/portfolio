@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "critters": "^0.0.23",
     "framer-motion": "latest",
     "lucide-react": "^0.454.0",
     "motion": "^12.7.4",
