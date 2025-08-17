@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const blogUrl = 'https://blog.haerulr2.com'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +51,7 @@ export default function Navbar() {
               About
             </Link>
             <Link
-              href="#blog"
+              href={blogUrl}
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
               Blog
