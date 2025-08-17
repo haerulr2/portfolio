@@ -22,19 +22,19 @@ export default function Features() {
       icon: <CircuitBoard className="w-6 h-6" />,
       title: "Real-World Architecture",
       description:
-        "I build with production in mind — from folder structure to deployment-ready setup.",
+        "I build with production in mind from folder structure to deployment ready setup.",
     },
     {
       icon: <LayoutPanelTop className="w-6 h-6" />,
       title: "Pixel-Perfect Execution",
       description:
-        "Frontend isn’t just working — it’s polished. I pay attention to layout, spacing, typography.",
+        "Frontend isn't just working it's polished. I pay attention to layout, spacing, typography.",
     },
     {
       icon: <Gauge className="w-6 h-6" />,
       title: "Blazing Performance",
       description:
-        "From lazy-loading to lighthouse-optimized. You'll never worry about speed again.",
+        "From lazy-loading to lighthouse optimized. You'll never worry about speed again.",
     },
   ];
 

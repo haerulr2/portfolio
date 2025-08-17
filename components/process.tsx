@@ -16,12 +16,12 @@ export default function Process() {
     {
       number: "02",
       title: "Strategy",
-      description: "With clarity on the objective, I craft a scalable architecture and technical roadmap. Every decision is intentional—designed to align with real-world needs.",
+      description: "With clarity on the objective, I craft a scalable architecture and technical roadmap. Every decision is intentional designed to align with real-world needs.",
     },
     {
       number: "03",
       title: "Design & Development",
-      description: "From structure to pixels, I execute with precision. Clean code, accessible UI, and responsive layouts that look great—and feel even better—on any device.",
+      description: "From structure to pixels, I execute with precision. Clean code, accessible UI, and responsive layouts that look great and feel even better on any device.",
     },
     {
       number: "04",
