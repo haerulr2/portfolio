@@ -8,30 +8,29 @@ import { ArrowRight } from "lucide-react"
 export default function Work() {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const projects = [
+  const projects: {
+    title: string;
+    subtitle: string;
+    image: string;
+    year: string;
+  }[] = [
     {
-      title: "BRUTALIST",
-      subtitle: "Digital Platform",
-      image: "/works/1.webp?height=600&width=800",
-      year: "2023",
+      title: "Modern UI Dashboard",
+      subtitle: "In Progress",
+      image: "/works/2.webp",
+      year: "2025",
     },
     {
-      title: "MONOCHROME",
-      subtitle: "Brand Identity",
-      image: "/works/2.webp?height=600&width=800",
-      year: "2023",
+      title: "Dev Workflow Automation (n8n + APIs)",
+      subtitle: "Coming Soon",
+      image: "/works/3.webp",
+      year: "2025",
     },
     {
-      title: "MINIMAL",
-      subtitle: "Web Experience",
-      image: "/works/3.webp?height=600&width=800",
-      year: "2022",
-    },
-    {
-      title: "CONTRAST",
-      subtitle: "Mobile Application",
-      image: "/works/4.webp?height=600&width=800",
-      year: "2022",
+      title: "Self-hosted API Playground",
+      subtitle: "Deployed with Cloudflare Tunnel",
+      image: "/works/4.webp",
+      year: "2025",
     },
   ]
 
@@ -51,9 +50,7 @@ export default function Work() {
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 md:mb-0 text-white">
-              Our Latest
-              <br />
-              <span className="text-white/70">Projects</span>
+              Recent Works
             </h2>
             <button className="border-2 border-white/20 px-6 py-3 text-sm uppercase tracking-widest text-white/80 hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300 flex items-center group">
               View All Work
