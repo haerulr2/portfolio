@@ -175,12 +175,12 @@ export default function Contact() {
                     Phone
                   </div>
                   <a
-                    href="https://t.me/+6285722556224"
+                    href="https://t.me/+6285252713141"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    +62 857-2255-6224
+                    +62 852-5271-3141
                   </a>
                 </div>
               </div>
