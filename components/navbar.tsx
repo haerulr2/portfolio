@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const blogUrl = 'https://blog.haerulr2.com'
+  const blogUrl = 'https://blog.haerulr2.dev'
 
   useEffect(() => {
     const handleScroll = () => {
