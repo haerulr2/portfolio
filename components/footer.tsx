@@ -21,7 +21,7 @@ export default function Footer() {
               </a>
             </nav>
             <div className="h-6 w-px bg-neutral-800 hidden md:block"></div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               <a href="https://www.instagram.com/haerulr2/" className="text-neutral-400 hover:text-white transition-colors" aria-label="Instagram">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
